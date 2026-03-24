@@ -163,24 +163,21 @@ h1 em { font-style:italic; color:var(--smoke-light); }
   display:flex; flex-direction:column; align-items:center; gap:28px;
   animation:rise .9s .15s ease both;
 }
-/* ─── HERO MOBILE BADGE ─── */
-.hero-mobile-badge {
-  display:none;
-  flex-direction:column; align-items:center; gap:12px;
-  padding:32px;
-  background:rgba(255,255,255,.6);
-  border:1px solid var(--border);
-  border-radius:16px;
-  backdrop-filter:blur(8px);
-  text-align:center;
+/* ─── SMOKE VIDEO ─── */
+.smoke-video-wrap {
+  width:260px; height:260px;
+  border-radius:50%;
+  overflow:hidden;
+  filter:drop-shadow(0 0 60px rgba(124,58,237,.4));
+  animation:float 7s ease-in-out infinite;
 }
-.mobile-emoji {
-  font-size:64px; line-height:1;
-  filter:drop-shadow(0 0 24px rgba(124,58,237,.3));
+.smoke-video {
+  width:100%; height:100%;
+  object-fit:cover;
 }
-.mobile-badge-text {
-  font-size:15px; font-weight:600; color:var(--text);
-  line-height:1.4; letter-spacing:.01em;
+@keyframes float {
+  0%,100% { transform:translateY(0); }
+  50%      { transform:translateY(-14px); }
 }
 
 .qr-block { display:flex; flex-direction:column; align-items:center; gap:10px; }
@@ -305,7 +302,7 @@ footer a { color:var(--smoke);text-decoration:none; }
   .hero-grid { grid-template-columns:1fr; gap:36px; }
   .hero-visual { order:-1; }
   .qr-desktop { display:none; }
-  .hero-mobile-badge { display:flex; }
+  .smoke-video-wrap { width:180px; height:180px; }
   .feat-grid { grid-template-columns:1fr; }
   h1 { font-size:clamp(40px,10vw,56px); }
 }
