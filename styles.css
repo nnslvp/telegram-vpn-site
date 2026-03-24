@@ -201,6 +201,7 @@ h1 em { font-style:italic; color:var(--smoke-light); }
 .qr-box::after  { bottom:-1px;right:-1px; border-width:0 2px 2px 0; }
 .qr-box .c3 { top:-1px;right:-1px; border-width:2px 2px 0 0; }
 .qr-box .c4 { bottom:-1px;left:-1px; border-width:0 0 2px 2px; }
+.qr-img { width:100%; height:100%; object-fit:contain; }
 .qr-text { font-size:10px;color:var(--dim);text-align:center;line-height:1.5; }
 .qr-label { font-size:10px;color:var(--dim);letter-spacing:.1em;text-transform:uppercase; }
 
