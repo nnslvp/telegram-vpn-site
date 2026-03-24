@@ -18,12 +18,11 @@ exclude:
 author:
   name: "Дымка VPN"
 
-# og:image — uncomment when assets/og-image.png exists:
-# defaults:
-#   - scope:
-#       path: ""
-#     values:
-#       image: /assets/og-image.png
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/og-image.png
 
 sitemap:
   changefreq: monthly
