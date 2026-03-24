@@ -182,7 +182,11 @@ h1 em { font-style:italic; color:var(--smoke-light); }
 
 .qr-block { display:flex; flex-direction:column; align-items:center; gap:10px; }
 .qr-box-lg {
-  width:220px;height:220px;
+  width:200px;height:200px;
+}
+.qr-box-lg .qr-img {
+  width:85%;height:85%;
+  object-fit:contain;
 }
 .qr-box {
   width:130px;height:130px;
