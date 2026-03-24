@@ -136,6 +136,18 @@ h1 em { font-style:italic; color:var(--smoke-light); }
   transform:translateY(-2px);
 }
 .btn:hover::after { opacity:1; }
+.btn-secondary {
+  background:transparent;
+  border-color:rgba(167,139,250,.2);
+  color:var(--muted);
+  font-size:12px;
+}
+.btn-secondary:hover {
+  background:rgba(124,58,237,.08);
+  color:var(--smoke-light);
+  border-color:rgba(167,139,250,.4);
+  box-shadow:0 0 32px rgba(124,58,237,.15);
+}
 .btn-arr { opacity:.55; transition:transform .3s,opacity .3s; }
 .btn:hover .btn-arr { transform:translateX(5px); opacity:1; }
 
@@ -226,7 +238,7 @@ h2 {
 .feat-n {
   font-family:'Cormorant Garamond',serif;
   font-size:52px;font-weight:300;
-  color:rgba(167,139,250,.12);
+  color:rgba(167,139,250,.3);
   line-height:1;margin-bottom:22px;letter-spacing:-.04em;
 }
 .feat-t { font-size:14px;font-weight:600;color:var(--text);margin-bottom:10px; }
@@ -243,7 +255,7 @@ h2 {
 .step-n {
   font-family:'Cormorant Garamond',serif;
   font-size:44px;font-weight:300;
-  color:rgba(167,139,250,.18);line-height:1;padding-top:3px;
+  color:rgba(167,139,250,.35);line-height:1;padding-top:3px;
 }
 .step h3 { font-size:15px;font-weight:600;color:var(--text);margin-bottom:6px; }
 .step p  { font-size:13px;color:var(--muted);line-height:1.65; }
