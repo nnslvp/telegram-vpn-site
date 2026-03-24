@@ -1,0 +1,28 @@
+title: "Дымка — VPN для России без боли"
+description: "VPN для России с умным роутингом. Госуслуги, Авито, Wildberries работают без отключения. Telegram разблокирован. Бесплатно."
+url: "https://vpn.nnslvp.io"
+baseurl: ""
+
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/
+
+author:
+  name: "Дымка VPN"
+
+# og:image — uncomment when assets/og-image.png exists:
+# defaults:
+#   - scope:
+#       path: ""
+#     values:
+#       image: /assets/og-image.png
+
+sitemap:
+  changefreq: monthly
